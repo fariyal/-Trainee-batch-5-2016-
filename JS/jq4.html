@@ -1,0 +1,42 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="" name="checkbox"/>
+		<input type="" name="radio"/>
+		<input type="" name="text"/>
+		<input type="" name="button"/>
+	</form>
+	<form>
+	    <input type="" name="checkbox"/>
+		<input type="" name="radio"/>
+		<input type="" name="text"/>
+		<input type="" name="button"/>
+	</form>
+	    <input type="" name="checkbox"/>
+		<input type="" name="radio"/>
+		<input type="" name="text"/>
+		<input type="" name="button"/>
+		<div>click here</div>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+	<script type="text/javascript">
+
+	alert('selectef' + jQuery('input',$('form')).length + 'inputs');
+
+	alert('selectef' + jQuery('input',document.forms[0]).length +'inputs');
+
+	alert('selectef' + jQuery('input','body').length +'inputs');
+
+	jQuery('div').click(function() {
+		jQuery('div').css('background-color','blue');
+		// body...
+	})
+	</script>
+
+</body>
+</html>

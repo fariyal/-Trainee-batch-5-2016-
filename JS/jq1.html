@@ -1,0 +1,39 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="grey">
+	 //<div>old content</div>
+	 <div>old content</div>
+	 <div>old content</div>
+	 <div>old content</div>
+
+	<a href="#" class="link">link</a>
+	<a href="#">link</a>
+	<a href="#" class="link">link</a>
+	<a href="#">link</a>
+	<a href="#" class="link">link</a>
+	<a href="#">link</a>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+	alert('Page contains' +jQuery('a').length + '<a> element!');
+	alert('Page contains' +jQuery(document.getElementsByTagName('a')).length +
+		'<a> element, And has a '
+		+ jQuery(document.body).attr('bgcolor') +'background');
+	    jQuery('a.link').attr('href', "https://www.google.co.in/");
+
+		//jQuery('div').hide();
+		jQuery('div').text('new content')
+		alert(jQuery.fn.jquery); //checking version or laert
+		jQuery('div').addClass('updatedcontent');
+		jQuery('div').hide().text('new content').addClass("updateContent").show();
+
+	</script>
+
+
+
+</body>
+</html>

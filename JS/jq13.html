@@ -1,0 +1,30 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="one"></div>
+<div id="Two"></div>
+<div id="Three"></div>
+<div id="Four"></div>
+<div id="Five"></div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+var arr={"one","two","Three","Four","Five"};
+var adj={ one:1,two:2,Three:3,Four:4,Five:5,};
+
+jQuery.each(arr,function(i,val){
+	$("# "+ val).text("Mine is " +val+",");
+	return(val !== "Three");
+});
+
+jQuery.each(obj,function(i,val){
+	$("# "+ i).append(document.create.TextNode("-"  + val ) );
+
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype.html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>Anchors</h3>
+	<a href="#">Anchor Element</a>
+	<a href="#">Anchor Element</a>
+	<a href="#" class="remove">Anchor Element</a>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+		jQuery('<p><a>jQuery</a></p>').find('a').attr('href','http://jquery.com').end().appendTo('body');
+
+		jQuery('a').remove('.remove');
+		jQuery('a').removeAttr('href');
+
+		</script>
+
+</body>
+</html>
